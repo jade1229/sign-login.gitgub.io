@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login-Form</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <input type="checkbox" id="hide-btn">
+
+        <div class="signup">
+            <label for="hide-btn">Sign up</label>
+
+            <input type="text" placeholder="username">
+
+            <input type="email" placeholder="email" id="email" name="email" required>
+            <span class="email" id="email-validation-note" ></span>
+
+            <input type="password" placeholder="password" required onkeyup="checkPasswordStrength(this.value)">
+            <span class="note" id="pass-note"></span>
+
+            <button type="submit">Sign up</button>
+        </div>
+
+        <div class="login">
+            <label for="hide-btn">Login</label>
+            <input type="text" placeholder="username" required>
+            <input type="password" placeholder="password" required>
+            <button>Log in</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
